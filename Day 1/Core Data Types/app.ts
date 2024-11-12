@@ -1,17 +1,21 @@
-function add(x: number, y: number, showResult: boolean, phrase: string) {
-	// if(typeof x !== "number" || typeof y !== "number")
-    let result = x+y;
-    if(showResult)
-        console.log(phrase + result);
-    else
-        return result;
-    // throw new Error("Incorrect Input!");
+const person: {
+	name: string;
+	age: number;
+} = {
+	name: "Shubh",
+	age: 20,
+};
 
-}
+console.log(person.name);
 
-const num1 = "5";
-const num2 = 2.6;
-let printResult = true;
+// interface Person {
+// 	name: string;
+// 	age: number;
+// }
 
-const result = add(+num1, +num2, printResult,"Result is ");
-console.log(result);
+// const person: Person = {
+// 	name: "Shubh",
+// 	age: 20,
+// };
+
+// console.log(person.name); // Works fine
