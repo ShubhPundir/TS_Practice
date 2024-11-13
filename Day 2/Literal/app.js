@@ -1,5 +1,6 @@
+"use strict";
 function add(x, y, returnAs) {
-    var result;
+    let result;
     if ((typeof x === "number" && typeof y === "number") ||
         returnAs === "as-number") {
         result = +x + +y;
@@ -9,12 +10,12 @@ function add(x, y, returnAs) {
     }
     return result;
 }
-var num1 = "5";
-var num2 = 2.6;
-var printResult = true;
-var result1 = add(5, 2.6, "as-number");
+const num1 = "5";
+const num2 = 2.6;
+// let printResult = true;
+const result1 = add(5, 2.6, "as-number");
 console.log(result1);
-var result2 = add("5", 265, "as-number");
+const result2 = add("5", 265, "as-number");
 console.log(result2);
-var result3 = add("Shubh", "Pundir", "as-text");
+const result3 = add("Shubh", "Pundir", "as-text");
 console.log(result3);
