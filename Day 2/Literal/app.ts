@@ -16,7 +16,7 @@ function add(x: Combinable, y: Combinable, returnAs: ConversionDescriptor) : Com
 
 const num1 = "5";
 const num2 = 2.6;
-let printResult = true;
+// let printResult = true;
 
 const result1 = add(5, 2.6, "as-number");
 console.log(result1);
